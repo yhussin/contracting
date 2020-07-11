@@ -4,7 +4,7 @@
 
 .front2 {
     border-radius: 15px;
-    width: 100%;
+
 }
 
 .center {
@@ -12,7 +12,7 @@
 }
 
 .center-margin {
-    margin: 150px;
+    /* margin: 150px; */
     text-align: center;
 }
 
@@ -61,3 +61,13 @@
 i {
     font-size: 100px;
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .media-center {
+      text-align: center;
+  }
+  .media-small-image {
+      width: 350px;
+  }
+}
+  
