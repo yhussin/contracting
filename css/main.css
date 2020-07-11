@@ -63,16 +63,19 @@ i {
 }
 
 .background-pic {
-    background-image: url('../public/images/sprayfoaminsulation.jpg');
+    background-image: url('../public/images/spray_foam_2050.jpg');
     background-position: center;
     background-repeat: no-repeat;
     
 }
 .background-overlay {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(48, 48, 48, 0.9);
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
   .media-center {
       text-align: center;
   }
