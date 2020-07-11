@@ -1,10 +1,11 @@
 .frontslide{
     border-radius: 15px;
+    width: 490px;
 }
 
 .front2 {
     border-radius: 15px;
-
+    width: 500px;
 }
 
 .center {
@@ -66,10 +67,19 @@ i {
     background-image: url('../public/images/spray_foam_2050.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    
 }
 .background-overlay {
     background-color: rgba(48, 48, 48, 0.9);
+}
+.background-slant {
+    background-image: url('../public/images/bg-slant.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.gradient {
+    background: rgb(0,95,176);
+    background: linear-gradient(90deg, rgba(0,95,176,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 @media only screen 
