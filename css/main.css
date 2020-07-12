@@ -28,7 +28,7 @@
     text-align: center;
 }
 
-.benefits {
+.white {
     color: white;
 }
 
@@ -37,31 +37,31 @@
 }
 
 .blue {
-    background-color: rgb(0, 115, 191);
+    color: rgb(0, 115, 191)
 }
 
 
 .btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
-    background-color:  rgb(0, 115, 191) !important;
+    background-color:  rgb(0, 113, 189) !important;
 }
 
 .thin {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: rgb(111, 111, 111);
+    /* color: rgb(111, 111, 111); */
 }
 
 .bold {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    color: rgb(111, 111, 111);
+    /* color: rgb(111, 111, 111); */
 }
 
 .thick {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    color: rgb(0, 115, 191)
 }
+
 
 .tiny {
     font-family: 'Roboto', sans-serif;
@@ -78,16 +78,26 @@
 .background-overlay {
     background-color: rgba(48, 48, 48, 0.9);
 }
+
 .background-slant {
-    background-image: url('../public/images/bg-slant.png');
+    background-image: url('../public/images/bg-slant.jpg');
     background-position: right;
     background-repeat: no-repeat;
 }
 
+
+.footer-bg-pic {
+    background-image: url('../public/images/footer-bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    }
 .gradient {
-    background: rgb(0,95,176);
-    background: linear-gradient(90deg, rgba(0,95,176,1) 0%, rgba(255,255,255,1) 100%);
+    /* background: rgb(0,95,176);
+    background: linear-gradient(90deg, rgba(0,95,176,1) 0%, rgba(255,255,255,1) 100%); */
+background: rgba(255,255,255, 0.9);
+background: linear-gradient(0deg, rgba(255,255,255,0.9) 0%, rgba(0,95,176,0.9) 100%);
 }
+
 
 @media only screen 
   and (min-device-width: 375px) 
@@ -98,6 +108,9 @@
   }
   .media-small-image {
       width: 350px;
+  }
+  .media-white-text {
+      color: white;
   }
 }
   
