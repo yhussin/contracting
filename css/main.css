@@ -1,6 +1,13 @@
+
+
 .frontslide{
     border-radius: 15px;
     width: 490px;
+}
+
+.front2 {
+    border-radius: 15px;
+    width: 500px;
 }
 
 .shadow {
@@ -12,11 +19,6 @@
   0 41.8px 33.4px rgba(0, 0, 0, 0.05),
   0 100px 80px rgba(0, 0, 0, 0.07)
 ;
-}
-
-.front2 {
-    border-radius: 15px;
-    width: 500px;
 }
 
 .center {
@@ -63,7 +65,6 @@
     font-weight: 900;
 }
 
-
 .tiny {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -86,30 +87,84 @@
     background-repeat: no-repeat;
 }
 
-
 .footer-bg-pic {
     background-image: url('../public/images/footer-bg2.png');
     background-position: center;
     background-repeat: no-repeat;
-    }
+}
+
 .gradient {
 background: rgba(255,255,255, 0.9);
 background: linear-gradient(0deg, rgba(255,255,255,0.9) 0%, rgba(0,95,176,0.9) 100%);
 }
 
 
+
+
+  
+/* Ipads */
+@media only screen and (max-width: 1000px) {
+    
+    .media-center {
+        text-align: center;
+    }
+    .background-slant {
+      background-image: url('../public/images/blank-png.png');
+      background-position: right;
+      background-repeat: no-repeat;
+
+    }  
+    .media-blue-bg {
+        background-color: #0071BD;
+    }
+    .media-white-text {
+        color: white;
+    }
+    .frontslide {
+        width: 350px;
+        border-radius: 15px;
+    }
+    .front2 {
+        border-radius: 15px;
+        width: 350px;
+    }
+}
+
+/* Mobile */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) {
-  .media-center {
-      text-align: center;
-  }
-  .media-small-image {
-      width: 350px;
-  }
-  .media-white-text {
-      color: white;
-  }
+     .media-blue-bg {
+         background-color: greenyellow;
+     }
 }
-  
+
+
+
+
+
+/* Smaller screen */
+/* @media (min-device-width: 400px)  {
+    body {
+        background-color: green;
+    }
+    .media-center {
+        text-align: center;
+    }
+    .media-small-image {
+        width: 350px;
+    }
+    .media-white-text {
+        color: white;
+    }
+    .bg-slant-media {
+      background-image: url('../public/images/bg-slant.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-color: #0071bd;
+    }
+    .bg-white {
+        background-color: white;
+    }
+} */
