@@ -2,94 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <title>Home and Commercial Insulation Contractor | Amira Contracting Inc.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+  <title>Home and Commercial Insulation Contractor | Amira Contracting Inc.</title>
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/a6dbe5e13a.js" crossorigin="anonymous"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/a6dbe5e13a.js" crossorigin="anonymous"></script>
 
 
-    <!-- mailform -->
-	<script>
-		function submitEmailForm(form) {
-			var obj = new XMLHttpRequest();
-			obj.onreadystatechange = function(){
-				if(obj.readyState == 4){
-					if(obj.status == 200){
-						var res = JSON.parse(obj.responseText);
-						alert(res.message);
-					}
-					else{
-						alert("XMLHttp status " + obj.status + ": " + obj.statusText);
-					}
-				}
-			};
-			obj.open("post", form.action, true);
-			obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
-			obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
-			return false;
-		}
-	</script>
+  <!-- mailform -->
+  <script>
+    function submitEmailForm(form) {
+      var obj = new XMLHttpRequest();
+      obj.onreadystatechange = function () {
+        if (obj.readyState == 4) {
+          if (obj.status == 200) {
+            var res = JSON.parse(obj.responseText);
+            alert(res.message);
+          }
+          else {
+            alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+          }
+        }
+      };
+      obj.open("post", form.action, true);
+      obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+      obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+      return false;
+    }
+  </script>
 </head>
 
 <body>
-    <!-- Navbar -->
+  <!-- Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a href="index.html"><img src="public/images/logo.png" alt="Logo"></img></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item mr-2 bold">
-                    <a class="nav-link ml-5" href="why-foam.html">Why Foam?<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown mr-1 bold">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Residential
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="new-construction.html">New Construction</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="existing-home.html">Exisiting Homes</a>
-                    </div>
-                  </li>
-                <li class="nav-item dropdown mr-1 bold">
-                    <a class="nav-link dropdown-toggle" href="commercial.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Commercial
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="commercial-insulation">Commercial Insulation</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="commercial-roofing.html">Commercial Roofing</a>
-                    </div>
-                  </li>
-                <li class="nav-item mr-1 bold">
-                    <a class="nav-link" href="faqs.html">FAQ</a>
-                </li>
-                <li class="nav-item mr-1 bold">
-                    <a class="nav-link" href="blog.html">Learning Center</a>
-                </li>
-                <li class="nav-item mr-1 bold">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item bold">
-                    <a class="nav-link" href="contact-us.html">Contact Us</a>
-                </li>
-            </ul>
-            <span class="navbar-text bold">
-                Call for a free estimate: <div class="bold blue">302-464-0644</div>
-            </span>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a href="index.html"><img src="public/images/logo.png" alt="Logo"></img></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mr-2 bold">
+          <a class="nav-link ml-5" href="why-foam.html">Why Foam?<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown mr-1 bold">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Residential
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="new-construction.html">New Construction</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="existing-home.html">Exisiting Homes</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown mr-1 bold">
+          <a class="nav-link dropdown-toggle" href="commercial.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Commercial
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="commercial-insulation">Commercial Insulation</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="commercial-roofing.html">Commercial Roofing</a>
+          </div>
+        </li>
+        <li class="nav-item mr-1 bold">
+          <a class="nav-link" href="faqs.html">FAQ</a>
+        </li>
+        <li class="nav-item mr-1 bold">
+          <a class="nav-link" href="blog.html">Learning Center</a>
+        </li>
+        <li class="nav-item mr-1 bold">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item bold">
+          <a class="nav-link" href="contact-us.html">Contact Us</a>
+        </li>
+      </ul>
+      <span class="navbar-text bold">
+        Call for a free estimate: <div class="bold blue">302-464-0644</div>
+      </span>
+    </div>
+  </nav>
 
 
 
@@ -98,13 +100,13 @@
 
 
 
-<!-- Accordion Menu -->
+  <!-- Accordion Menu -->
 
   <div class="container">
     <div id="accordion2">
       <div class="row">
         <!-- 1 -->
-        <div class="col">
+        <div class="col-md">
 
           <div class="card mb-1 shadow">
             <div class="card-header" id="heading1">
@@ -117,13 +119,13 @@
             </div>
             <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion2">
               <div class="card-body">
-Highest R-Value of any product, at nearly R-7 per inch.
+                Highest R-Value of any product, at nearly R-7 per inch.
               </div>
             </div>
           </div>
         </div>
         <!-- 2 -->
-        <div class="col">
+        <div class="col-md">
           <div class="card mb-1 shadow">
             <div class="card-header" id="heading2">
               <h5 class="mb-0">
@@ -135,7 +137,10 @@ Highest R-Value of any product, at nearly R-7 per inch.
             </div>
             <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion2">
               <div class="card-body">
-                Closed cell polyurethane spray foam is an air and vapor barrier at only 1 inch depth. The United States Department of Energy (DOE) has shown that 15% of traditional insulation materials' effectiveness is lost due to convection loops through and behind board and batt systems. Polyurethane technology eliminates this by forming a fully adhered, seamless insulation and air barrier system.
+                Closed cell polyurethane spray foam is an air and vapor barrier at only 1 inch depth. The United States
+                Department of Energy (DOE) has shown that 15% of traditional insulation materials' effectiveness is lost
+                due to convection loops through and behind board and batt systems. Polyurethane technology eliminates
+                this by forming a fully adhered, seamless insulation and air barrier system.
               </div>
             </div>
           </div>
@@ -145,7 +150,7 @@ Highest R-Value of any product, at nearly R-7 per inch.
 
       <div class="row">
         <!-- 3 -->
-        <div class="col">
+        <div class="col-md">
           <div class="card mb-1 shadow">
             <div class="card-header" id="heading3">
               <h5 class="mb-0">
@@ -157,7 +162,9 @@ Highest R-Value of any product, at nearly R-7 per inch.
             </div>
             <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion2">
               <div class="card-body">
-                Closed cell foam does not absorb moisture or lose R value when exposed to water. That is why Closed-cell polyurethane foam is classified as an acceptable flood-resistant material by the Federal Emergency Management Agency (FEMA).
+                Closed cell foam does not absorb moisture or lose R value when exposed to water. That is why Closed-cell
+                polyurethane foam is classified as an acceptable flood-resistant material by the Federal Emergency
+                Management Agency (FEMA).
               </div>
             </div>
 
@@ -165,7 +172,7 @@ Highest R-Value of any product, at nearly R-7 per inch.
         </div>
 
         <!-- 4 -->
-        <div class="col">
+        <div class="col-md">
           <div class="card mb-1 shadow">
             <div class="card-header" id="heading4">
               <h5 class="mb-0">
@@ -177,7 +184,11 @@ Highest R-Value of any product, at nearly R-7 per inch.
             </div>
             <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion2">
               <div class="card-body">
-                Continuous air barrier systems improve energy efficiency by keeping conditioned air inside the house where it belongs. By controlling air movement with planned ventilation, you'll get a reduction in moisture, pollen, condensation, mold and mildew. Homes built to the American Lung Association Health House guidelines are constructed airtight to improve energy efficiency and prevent unplanned moisture movement.
+                Continuous air barrier systems improve energy efficiency by keeping conditioned air inside the house
+                where it belongs. By controlling air movement with planned ventilation, you'll get a reduction in
+                moisture, pollen, condensation, mold and mildew. Homes built to the American Lung Association Health
+                House guidelines are constructed airtight to improve energy efficiency and prevent unplanned moisture
+                movement.
               </div>
             </div>
 
@@ -185,135 +196,148 @@ Highest R-Value of any product, at nearly R-7 per inch.
         </div>
 
       </div>
-<!-- Row three -->
-<div class="row">
-  <!-- 3 -->
-  <div class="col">
-    <div class="card mb-1 shadow">
-      <div class="card-header" id="heading5">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5"
-            aria-expanded="false" aria-controls="collapse5">
-            <i class="fas fa-bolt fa-2x mr-3 blue"></i>Save Energy
-          </button>
-        </h5>
-      </div>
-      <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion2">
-        <div class="card-body">
-          The ENERGY STAR qualified homes program recommends air-tight construction of the building envelope. These homes are typically at least 15% more energy efficient than homes built to the 2006 International Energy Conservation Code (IECC).
+      <!-- Row three -->
+      <div class="row">
+        <!-- 3 -->
+        <div class="col-md">
+          <div class="card mb-1 shadow">
+            <div class="card-header" id="heading5">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5"
+                  aria-expanded="false" aria-controls="collapse5">
+                  <i class="fas fa-bolt fa-2x mr-3 blue"></i>Save Energy
+                </button>
+              </h5>
+            </div>
+            <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion2">
+              <div class="card-body">
+                The ENERGY STAR qualified homes program recommends air-tight construction of the building envelope.
+                These homes are typically at least 15% more energy efficient than homes built to the 2006 International
+                Energy Conservation Code (IECC).
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
+        <!-- 4 -->
+        <div class="col-md">
+          <div class="card mb-1 shadow">
+            <div class="card-header" id="heading6">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6"
+                  aria-expanded="false" aria-controls="collapse6">
+                  <i class="fas fa-mountain fa-2x mr-3 blue"></i>Permanant
+                </button>
+              </h5>
+            </div>
+            <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion2">
+              <div class="card-body">
+                Permanent, wont sag or lose R values like other common insulation products, even when exposed to
+                moisture.
+              </div>
+            </div>
 
-  <!-- 4 -->
-  <div class="col">
-    <div class="card mb-1 shadow">
-      <div class="card-header" id="heading6">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6"
-            aria-expanded="false" aria-controls="collapse6">
-            <i class="fas fa-mountain fa-2x mr-3 blue"></i>Permanant
-          </button>
-        </h5>
-      </div>
-      <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion2">
-        <div class="card-body">
-          Permanent, wont sag or lose R values like other common insulation products, even when exposed to moisture.
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
-
-</div>
-<!-- Row Four -->
-<div class="row">
-  <!-- 3 -->
-  <div class="col">
-    <div class="card mb-1 shadow">
-      <div class="card-header" id="heading7">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7"
-            aria-expanded="false" aria-controls="collapse7">
-            <i class="fas fa-dumbbell fa-2x mr-3 blue"></i>Adds Structural Strength
-          </button>
-        </h5>
       </div>
-      <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion2">
-        <div class="card-body">
-          Spray-applied closed-cell polyurethane foam is the only insulation material proven to add structural integrity throughout the wall system, according to the National Association of Home Builders (NAHB) Research Center. Tests conducted there show spray foam insulation between wood- and steel-stud wall panels increased rack and shear strength two to three times compared with standard stick-built components with glass fiber insulation.
+      <!-- Row Four -->
+      <div class="row">
+        <!-- 3 -->
+        <div class="col-md">
+          <div class="card mb-1 shadow">
+            <div class="card-header" id="heading7">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7"
+                  aria-expanded="false" aria-controls="collapse7">
+                  <i class="fas fa-dumbbell fa-2x mr-3 blue"></i>Adds Structural Strength
+                </button>
+              </h5>
+            </div>
+            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion2">
+              <div class="card-body">
+                Spray-applied closed-cell polyurethane foam is the only insulation material proven to add structural
+                integrity throughout the wall system, according to the National Association of Home Builders (NAHB)
+                Research Center. Tests conducted there show spray foam insulation between wood- and steel-stud wall
+                panels increased rack and shear strength two to three times compared with standard stick-built
+                components with glass fiber insulation.
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
+        <!-- 4 -->
+        <div class="col-md">
+          <div class="card mb-1 shadow">
+            <div class="card-header" id="heading8">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8"
+                  aria-expanded="false" aria-controls="collapse8">
+                  <i class="fas fa-flag-usa fa-2x mr-3 blue"></i>Manufactured in USA
+                </button>
+              </h5>
+            </div>
+            <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion2">
+              <div class="card-body">
+                The foam we use here at Amira Contracting is manufactured by BASF at their Houston, TX facility.
+              </div>
+            </div>
 
-  <!-- 4 -->
-  <div class="col">
-    <div class="card mb-1 shadow">
-      <div class="card-header" id="heading8">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8"
-            aria-expanded="false" aria-controls="collapse8">
-            <i class="fas fa-flag-usa fa-2x mr-3 blue"></i>Manufactured in USA
-          </button>
-        </h5>
-      </div>
-      <div id="collapse8" class="collapse" aria-labelledby="heading8" data-parent="#accordion2">
-        <div class="card-body">
-          The foam we use here at Amira Contracting is manufactured by BASF at their Houston, TX facility.
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
-
-</div>
-<!-- Row Five -->
-<div class="row">
-  <!-- 3 -->
-  <div class="col">
-    <div class="card mb-1 shadow">
-      <div class="card-header" id="heading9">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9"
-            aria-expanded="false" aria-controls="collapse9">
-            <i class="fas fa-volume-mute fa-2x mr-3 blue"></i>Noise Reduction
-          </button>
-        </h5>
       </div>
-      <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion2">
-        <div class="card-body">
-          Spray foam insulation plays a role in sound dampening and minimizing noise traveling throughout the home. Airborne and flanking noise can be minimized in your residential projects thanks to spray foam insulation's air barrier properties. As a result, sounds from street traffic, barking dogs and airplane engines can be reduced.
+      <!-- Row Five -->
+      <div class="row">
+        <!-- 3 -->
+        <div class="col-md">
+          <div class="card mb-1 shadow">
+            <div class="card-header" id="heading9">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9"
+                  aria-expanded="false" aria-controls="collapse9">
+                  <i class="fas fa-volume-mute fa-2x mr-3 blue"></i>Noise Reduction
+                </button>
+              </h5>
+            </div>
+            <div id="collapse9" class="collapse" aria-labelledby="heading9" data-parent="#accordion2">
+              <div class="card-body">
+                Spray foam insulation plays a role in sound dampening and minimizing noise traveling throughout the
+                home. Airborne and flanking noise can be minimized in your residential projects thanks to spray foam
+                insulation's air barrier properties. As a result, sounds from street traffic, barking dogs and airplane
+                engines can be reduced.
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-    </div>
-  </div>
+        <!-- 4 -->
+        <div class="col-md">
+          <div class="card mb-1 shadow">
+            <div class="card-header" id="heading10">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10"
+                  aria-expanded="false" aria-controls="collapse10">
+                  <i class="fas fa-chart-line fa-2x mr-3 blue"></i>Increased resale value
+                </button>
+              </h5>
+            </div>
+            <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion2">
+              <div class="card-body">
+                The best upgrades to your home are the ones that can earn you back a piece of your investment down the
+                road. Insulating with Spray foam improves the household's thermal performance and fills the cracks and
+                holes that encourage drafts. It will save you energy today as well as increasing resale value and
+                desirability if you sell your home in the future.
+              </div>
+            </div>
 
-  <!-- 4 -->
-  <div class="col">
-    <div class="card mb-1 shadow">
-      <div class="card-header" id="heading10">
-        <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse10"
-            aria-expanded="false" aria-controls="collapse10">
-            <i class="fas fa-chart-line fa-2x mr-3 blue"></i>Increased resale value
-          </button>
-        </h5>
-      </div>
-      <div id="collapse10" class="collapse" aria-labelledby="heading10" data-parent="#accordion2">
-        <div class="card-body">
-          The best upgrades to your home are the ones that can earn you back a piece of your investment down the road. Insulating with Spray foam improves the household's thermal performance and fills the cracks and holes that encourage drafts. It will save you energy today as well as increasing resale value and desirability if you sell your home in the future.
+          </div>
         </div>
+
       </div>
-
-    </div>
-  </div>
-
-</div>
 
     </div>
   </div>
@@ -337,63 +361,69 @@ Highest R-Value of any product, at nearly R-7 per inch.
   </div>
 
 
-   <!-- Footer -->
-   <div class="footer-bg-pic">
+  <!-- Footer -->
+  <div class="footer-bg-pic">
     <div class="gradient">
-    <div class="container p-5">
+      <div class="container p-5">
         <div class="row">
-            <div class="col-xl-4 media-center"><img src="public/images/logo-footer.png"></img>
-            </div>
-            <div class="col-xl-4 media-center">
-                <p class="bold white">Services</p>
-                <p>Home and commercial insulation</p>
-                <p>Closed cell spray foam insulation</p>
-                <p>Open cell spray foam insulation</p>
-                <p>SPF Roofing</p>
-                <p>Roof Coatings and recoating</p>
-            </div>
-            <div class="col-xl-4 media-center">
-                <p class="bold white">Areas served</p>
-                <p>All of Delaware</p>
-                <p>and parts of: Maryland,</p>
-                <p>Pennsylvania,</p>
-                <p>New Jersey,</p>
-                <p>Virginia</p>
-            </div>
+          <div class="col-xl-4 media-center"><img src="public/images/logo-footer.png"></img>
+          </div>
+          <div class="col-xl-4 media-center">
+            <p class="bold white">Services</p>
+            <p>Home and commercial insulation</p>
+            <p>Closed cell spray foam insulation</p>
+            <p>Open cell spray foam insulation</p>
+            <p>SPF Roofing</p>
+            <p>Roof Coatings and recoating</p>
+          </div>
+          <div class="col-xl-4 media-center">
+            <p class="bold white">Areas served</p>
+            <p>All of Delaware</p>
+            <p>and parts of: Maryland,</p>
+            <p>Pennsylvania,</p>
+            <p>New Jersey,</p>
+            <p>Virginia</p>
+          </div>
 
         </div>
-    </div>
-    
+      </div>
 
-    <div class="container">
+
+      <div class="container">
         <div class="row">
-            <div class="col-xl-4 center media-center thin">
-                Email: amiracontracting@gmail.com
-                <br>DE License #2017602587
-            </div>
-            <div class="col-xl-4 center media-center"><p class="tiny">&copy 2020 Amira Contracting Inc. <br> Website design by <a href="http://yousefhussin.com" target="_blank">Yousef Hussin</a></p></div>
-            <div class="col-xl-4 center media-center">
-                <a href="https://www.facebook.com/AMIRASPRAYFOAM/" target="_blank"><i class="fa fa-facebook fa-2x mr-3" aria-hidden="true"></i></a>
-                <a href="https://www.google.com/search?q=Amira+Contracting+Inc,+548+S+Red+Fox+Cir,+Middletown,+DE+19709&ludocid=9750569915404361140#lrd=0x89c70971da295555:0x8750fbad65499db4,1,,," target="_blank"><i class="fab fa-google fa-2x mr-3" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/channel/UCSM_OnBCJXP709YuZIlw6aw?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x mr-3" aria-hidden="true"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-            </div>
+          <div class="col-xl-4 center media-center thin">
+            Email: amiracontracting@gmail.com
+            <br>DE License #2017602587
+          </div>
+          <div class="col-xl-4 center media-center">
+            <p class="tiny">&copy 2020 Amira Contracting Inc. <br> Website design by <a href="http://yousefhussin.com"
+                target="_blank">Yousef Hussin</a></p>
+          </div>
+          <div class="col-xl-4 center media-center">
+            <a href="https://www.facebook.com/AMIRASPRAYFOAM/" target="_blank"><i class="fa fa-facebook fa-2x mr-3"
+                aria-hidden="true"></i></a>
+            <a href="https://www.google.com/search?q=Amira+Contracting+Inc,+548+S+Red+Fox+Cir,+Middletown,+DE+19709&ludocid=9750569915404361140#lrd=0x89c70971da295555:0x8750fbad65499db4,1,,,"
+              target="_blank"><i class="fab fa-google fa-2x mr-3" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCSM_OnBCJXP709YuZIlw6aw?view_as=subscriber" target="_blank"><i
+                class="fab fa-youtube fa-2x mr-3" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-    </div>
+  </div>
 
-    <!-- Scripts -->
+  <!-- Scripts -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
