@@ -1,4 +1,7 @@
 
+p {
+    font-family: 'Raleway', sans-serif;
+}
 
 .frontslide{
     border-radius: 15px;
@@ -29,6 +32,11 @@
     margin: 150px 0 150px 0;
 }
 
+.benefits-list {
+    background-color: yellow;
+    width: 250px;
+}
+
 .white {
     color: white;
 }
@@ -45,8 +53,11 @@
     color: rgb(111, 111, 111);
 }
 
-.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+.btn-info, .btn-info:active, .btn-info:visited {
     background-color:  rgb(0, 113, 189) !important;
+}
+.btn-info:hover {
+    background-color:  rgb(54, 69, 79) !important;
 }
 
 .thin {
@@ -79,6 +90,21 @@
 }
 .background-overlay {
     background-color: rgba(48, 48, 48, 0.9);
+}
+
+.top-opaque-bg {
+    background-image: url('../public/images/footer-bg2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-nav-gradient {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5368522408963585) 0%, rgba(255,255,255,1) 100%);
+}
+
+.bottom-border {
+    border-bottom: solid rgba(0, 0, 0, 0.1) 1px;
 }
 
 .background-slant {
